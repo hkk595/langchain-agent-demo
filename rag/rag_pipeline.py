@@ -6,6 +6,7 @@ from langchain.document_loaders import TextLoader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.chains import RetrievalQA
 from langchain.chat_models import ChatOpenAI
+from galileo import log
 
 # Load OpenAI API key from environment variables
 load_dotenv()
@@ -34,6 +35,7 @@ qa_chain = RetrievalQA.from_chain_type(
 )
 
 # Define function for asking a question
+@log(span_type="llm", name="OpenAI GPT-4o")
 async def ask_question(query: str):
     result = qa_chain({"query": query})
     sources = [doc.metadata for doc in result["source_documents"]]

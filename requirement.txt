@@ -4,4 +4,6 @@ openai
 langchain
 faiss-cpu
 tiktoken
+galileo[openai]
+pydantic
 python-dotenv
