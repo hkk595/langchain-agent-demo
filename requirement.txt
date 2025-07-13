@@ -1,9 +1,9 @@
 fastapi
 uvicorn
-openai
-langchain
-faiss-cpu
-tiktoken
-galileo[openai]
+"mcp[cli]"
+"langchain[anthropic]"
+langchain-mcp-adapters
+langgraph
+httpx
 pydantic
 python-dotenv

@@ -1,12 +1,21 @@
-# RAG Demo
+# LangChain Agentic AI Demo
 
 ## Technical Stack
-- [OpenAI](https://openai.com/index/openai-api/)
-- [LangChain](https://www.langchain.com/)
 - [FastAPI](https://fastapi.tiangolo.com/)
+- [LangChain](https://www.langchain.com/)
+- [LangGraph](https://www.langchain.com/langgraph)
+- [Model Context Protocol](https://modelcontextprotocol.io/introduction)
 
 ## Environment Variables
+MODEL_VERSION<br>
+MODEL_PROVIDER<br>
 OPENAI_API_KEY<br>
-GALILEO_API_KEY<br>
-GALILEO_PROJECT<br>
-GALILEO_LOG_STREAM
+ANTHROPIC_API_KEY<br>
+SERPER_API_KEY<br>
+SERPER_API_BASE<br>
+MCP_SERVER_PATH_SERPER
+
+## Start the server
+```bash
+uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+```
