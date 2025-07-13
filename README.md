@@ -19,3 +19,13 @@ MCP_SERVER_PATH_SERPER
 ```bash
 uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 ```
+
+## Example request
+```bash
+curl --request POST \
+  --url http://0.0.0.0:8000/ask \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"topic": "Anthropic"
+}'
+```
