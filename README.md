@@ -1,16 +1,19 @@
 # LangChain Agentic AI Demo
 
 ## Technical Stack
-- [FastAPI](https://fastapi.tiangolo.com/)
+- [Anthropic](https://www.anthropic.com/api)
+- [OpenAI](https://openai.com/api/)
 - [LangChain](https://www.langchain.com/)
 - [LangGraph](https://www.langchain.com/langgraph)
+- [Serper](https://serper.dev/)
 - [Model Context Protocol](https://modelcontextprotocol.io/introduction)
+- [FastAPI](https://fastapi.tiangolo.com/)
 
 ## Environment Variables
 MODEL_VERSION<br>
 MODEL_PROVIDER<br>
-OPENAI_API_KEY<br>
 ANTHROPIC_API_KEY<br>
+OPENAI_API_KEY<br>
 SERPER_API_KEY<br>
 SERPER_API_BASE<br>
 MCP_SERVER_PATH_SERPER
