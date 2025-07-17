@@ -24,6 +24,7 @@ async def search_news(topic: str):
     payload = {
         "q": topic
     }
+    # TODO: keep the httpx client alive until the end of the MCP server process
     try:
         async with httpx.AsyncClient() as client:
             response = await client.post(request_url, headers=headers, json=payload)
@@ -63,6 +64,9 @@ async def get_news(topic: str) -> str:
 if __name__ == '__main__':
     # Initialize and run the server
     mcp.run(transport='stdio')
+
+    # TODO: integrate FastAPI to MCP server
+    # mcp = FastMCP.from_fastapi(app=app)
 
     # DEBUG: uncomment to check result
     # result = asyncio.run(get_news("Anthropic"))

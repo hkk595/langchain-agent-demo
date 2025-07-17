@@ -1,7 +1,7 @@
 fastapi
 uvicorn
-"mcp[cli]"
-"langchain[anthropic]"
+mcp[cli]
+langchain[anthropic]
 langchain-mcp-adapters
 langgraph
 httpx

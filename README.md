@@ -1,19 +1,17 @@
 # LangChain Agentic AI Demo
 
 ## Technical Stack
-- [Anthropic](https://www.anthropic.com/api)
-- [OpenAI](https://openai.com/api/)
 - [LangChain](https://www.langchain.com/)
 - [LangGraph](https://www.langchain.com/langgraph)
-- [Serper](https://serper.dev/)
 - [Model Context Protocol](https://modelcontextprotocol.io/introduction)
+- [Anthropic Claude Code](https://www.anthropic.com/claude-code)
+- [Serper](https://serper.dev/)
 - [FastAPI](https://fastapi.tiangolo.com/)
 
 ## Environment Variables
 MODEL_VERSION<br>
 MODEL_PROVIDER<br>
-ANTHROPIC_API_KEY<br>
-OPENAI_API_KEY<br>
+ANTHROPIC_API_KEY or OPENAI_API_KEY<br>
 SERPER_API_KEY<br>
 SERPER_API_BASE<br>
 MCP_SERVER_PATH_SERPER
@@ -36,4 +34,11 @@ curl --request POST \
   --data '{
 	"topic": "Anthropic"
 }'
+```
+
+## Example response
+```json
+{
+  "answer": "description + some news"
+}
 ```
